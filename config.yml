@@ -1,0 +1,16 @@
+title: Indirect Tax
+description: This course interduced in kannan
+template:
+  repo: indirect-tax-template
+  name: indirect-tax
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
